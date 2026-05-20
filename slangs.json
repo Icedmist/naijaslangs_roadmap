@@ -188,5 +188,43 @@
       "street",
       "pride"
     ]
+  },
+  {
+    "id": 11,
+    "slang": "e choke",
+    "translation": "Breathtaking or overwhelming",
+    "origin": "Davido (Music Artist)",
+    "meaning": "An expression used to describe a state of shock, extreme luxury, immense success, or something so amazing that it literally takes away the breath of onlookers.",
+    "examples": [
+      "My new car just landed, e choke!",
+      "The layout of this new developer dashboard, e choke!"
+    ],
+    "popularity": 5,
+    "category": "expression",
+    "tags": [
+      "breathtaking",
+      "amazing",
+      "music",
+      "luxury"
+    ]
+  },
+  {
+    "id": 12,
+    "slang": "lamba",
+    "translation": "A lie, tall tale, or sweet exaggeration",
+    "origin": "Street slang",
+    "meaning": "Lies or exaggerated claims made to deceive, flatter, or fast-talk someone. Often used in dating or sales pitches.",
+    "examples": [
+      "Stop giving me lamba, tell me the real price.",
+      "He has sweet mouth, full of lamba."
+    ],
+    "popularity": 4,
+    "category": "expression",
+    "tags": [
+      "lie",
+      "exaggeration",
+      "flattery",
+      "deceit"
+    ]
   }
 ]
