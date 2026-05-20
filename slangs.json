@@ -74,5 +74,43 @@
       "alert",
       "transaction"
     ]
+  },
+  {
+    "id": 5,
+    "slang": "abeg",
+    "translation": "Please / I beg of you",
+    "origin": "Pidgin English",
+    "meaning": "The ultimate respectful or urgent request modifier. Used when pleading, asking for a favor, or sometimes dismissively (e.g., 'abeg comot!').",
+    "examples": [
+      "Abeg, give me some space to think.",
+      "Help me carry this bag, abeg."
+    ],
+    "popularity": 5,
+    "category": "expression",
+    "tags": [
+      "request",
+      "pidgin",
+      "polite",
+      "dismissive"
+    ]
+  },
+  {
+    "id": 6,
+    "slang": "shege",
+    "translation": "Severe suffering, hardship, or adversity",
+    "origin": "Hausa / Street Slang",
+    "meaning": "Typically used in the context of seeing or experiencing severe difficulties (e.g., 'see shege'). It expresses having gone through extreme stress, pain, or testing times.",
+    "examples": [
+      "This economy will make you see shege pro max.",
+      "We saw shege on the road before we finally got to Lagos."
+    ],
+    "popularity": 5,
+    "category": "expression",
+    "tags": [
+      "struggle",
+      "pain",
+      "hardship",
+      " Hausa"
+    ]
   }
 ]
