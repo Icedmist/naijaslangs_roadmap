@@ -45,7 +45,7 @@ commit_backdated() {
   export GIT_COMMITTER_DATE="$commit_date"
   
   git add -A
-  git commit -m "$message"
+  git commit -m "$message" --allow-empty
 }
 
 echo "Generating backdated commits..."
