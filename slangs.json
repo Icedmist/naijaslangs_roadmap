@@ -9,5 +9,16 @@
     "popularity": 5,
     "category": "finance",
     "tags": ["broke", "money"]
+  },
+  {
+    "id": 2,
+    "slang": "japa",
+    "translation": "To emigrate, flee, or escape",
+    "origin": "Yoruba word (Já pa)",
+    "meaning": "Originally meaning to break free...",
+    "examples": ["Everyone in my class is trying to japa."],
+    "popularity": 5,
+    "category": "lifestyle",
+    "tags": ["travel", "escape"]
   }
 ]
