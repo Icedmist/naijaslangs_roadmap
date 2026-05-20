@@ -4,21 +4,209 @@
     "slang": "sapa",
     "translation": "Extreme broke-ness or financial distress",
     "origin": "Street / Pidgin English",
-    "meaning": "A state of extreme poverty...",
-    "examples": ["Sapa is chasing me this month."],
+    "meaning": "A state of extreme poverty, lack of money, or financial dryness, usually caused by poor spending habits, unemployment, or mid-month salary depletion. It is often personified as a spirit that pursues people.",
+    "examples": [
+      "Sapa is chasing me this month, I can't even afford bread.",
+      "God abeg, save me from the hands of sapa!"
+    ],
     "popularity": 5,
     "category": "finance",
-    "tags": ["broke", "money"]
+    "tags": ["broke", "money", "struggle", "funny"]
   },
   {
     "id": 2,
     "slang": "japa",
     "translation": "To emigrate, flee, or escape",
     "origin": "Yoruba word (Já pa)",
-    "meaning": "Originally meaning to break free...",
-    "examples": ["Everyone in my class is trying to japa."],
+    "meaning": "Originally meaning to break free or run away, it has become the standard national term for leaving Nigeria in search of better economic opportunities or green pastures abroad.",
+    "examples": [
+      "Everyone in my class is trying to japa to the UK.",
+      "If I get visa today, I will japa without saying goodbye to anyone."
+    ],
     "popularity": 5,
     "category": "lifestyle",
-    "tags": ["travel", "escape"]
+    "tags": ["travel", "escape", "abroad", "dreams"]
+  },
+  {
+    "id": 3,
+    "slang": "odogwu",
+    "translation": "An influential, wealthy, or highly respected person",
+    "origin": "Igbo (Great Man/Warrior)",
+    "meaning": "Historically used for a warrior or titleholder, it is now used as street slang to describe someone who is highly successful, rich, powerful, or leading in their field.",
+    "examples": [
+      "Odogwu has arrived! Drop the cash!",
+      "He cleared the entire restaurant bill, truly he is an odogwu."
+    ],
+    "popularity": 5,
+    "category": "personality",
+    "tags": ["boss", "wealthy", "leader", "respect"]
+  },
+  {
+    "id": 4,
+    "slang": "aza",
+    "translation": "Bank account number or details",
+    "origin": "Street Slang",
+    "meaning": "Derived from 'digit' or numerical representation, it refers strictly to a bank account number where money is expected to be transferred or credited.",
+    "examples": [
+      "Send your aza, let me drop something small for you.",
+      "My aza is green, the alert has entered!"
+    ],
+    "popularity": 5,
+    "category": "finance",
+    "tags": ["money", "bank", "alert", "transaction"]
+  },
+  {
+    "id": 5,
+    "slang": "abeg",
+    "translation": "Please / I beg of you",
+    "origin": "Pidgin English",
+    "meaning": "The ultimate respectful or urgent request modifier. Used when pleading, asking for a favor, or sometimes dismissively (e.g., 'abeg comot!').",
+    "examples": [
+      "Abeg, give me some space to think.",
+      "Help me carry this bag, abeg."
+    ],
+    "popularity": 5,
+    "category": "expression",
+    "tags": ["request", "pidgin", "polite", "dismissive"]
+  },
+  {
+    "id": 6,
+    "slang": "shege",
+    "translation": "Severe suffering, hardship, or adversity",
+    "origin": "Hausa / Street Slang",
+    "meaning": "Typically used in the context of seeing or experiencing severe difficulties (e.g., 'see shege'). It expresses having gone through extreme stress, pain, or testing times.",
+    "examples": [
+      "This economy will make you see shege pro max.",
+      "We saw shege on the road before we finally got to Lagos."
+    ],
+    "popularity": 5,
+    "category": "expression",
+    "tags": ["struggle", "pain", "hardship", " Hausa"]
+  },
+  {
+    "id": 7,
+    "slang": "ment",
+    "translation": "To go crazy or lose sanity",
+    "origin": "Derived from 'mental'",
+    "meaning": "Used to query someone's sanity or actions when they do something extremely bizarre, foolish, or outrageous. Usually framed as a question: 'You dey ment?'",
+    "examples": [
+      "Are you dey ment? Why would you delete the production database?",
+      "That guy has completely mented, don't mind him."
+    ],
+    "popularity": 5,
+    "category": "expression",
+    "tags": ["crazy", "foolish", "question", "insanity"]
+  },
+  {
+    "id": 8,
+    "slang": "no cap",
+    "translation": "No lie, completely true",
+    "origin": "Adopted from global AAVE",
+    "meaning": "Used to emphasize that a statement is 100% genuine, true, and without exaggeration or falsehood.",
+    "examples": [
+      "This is the best jollof rice in Lagos, no cap.",
+      "I worked for 18 hours straight yesterday, no cap."
+    ],
+    "popularity": 4,
+    "category": "expression",
+    "tags": ["truth", "real", "honesty", "modern"]
+  },
+  {
+    "id": 9,
+    "slang": "ajebutter",
+    "translation": "A sheltered, wealthy, or spoiled kid",
+    "origin": "Pidgin / Compound words",
+    "meaning": "Contrast to 'ajepako' (street-hardened). Describes someone raised in an affluent household who doesn't know street life or manual labor, and has a soft, pampered upbringing.",
+    "examples": [
+      "He can't eat street food, he's an ajebutter.",
+      "These ajebutter kids don't know what sapa feels like."
+    ],
+    "popularity": 4,
+    "category": "personality",
+    "tags": ["rich", "sheltered", "soft", "privileged"]
+  },
+  {
+    "id": 10,
+    "slang": "watimagbo",
+    "translation": "You must have heard of it by now",
+    "origin": "Yoruba street slang",
+    "meaning": "A catchphrase popular in street music indicating fame, notoriety, or high reputation. Literally: 'You would have heard it'.",
+    "examples": [
+      "Icedmist on the track, watimagbo!",
+      "Our brand is number one nationwide, watimagbo."
+    ],
+    "popularity": 4,
+    "category": "expression",
+    "tags": ["fame", "catchphrase", "street", "pride"]
+  },
+  {
+    "id": 11,
+    "slang": "e choke",
+    "translation": "Breathtaking or overwhelming",
+    "origin": "Davido (Music Artist)",
+    "meaning": "An expression used to describe a state of shock, extreme luxury, immense success, or something so amazing that it literally takes away the breath of onlookers.",
+    "examples": [
+      "My new car just landed, e choke!",
+      "The layout of this new developer dashboard, e choke!"
+    ],
+    "popularity": 5,
+    "category": "expression",
+    "tags": ["breathtaking", "amazing", "music", "luxury"]
+  },
+  {
+    "id": 12,
+    "slang": "lamba",
+    "translation": "A lie, tall tale, or sweet exaggeration",
+    "origin": "Street slang",
+    "meaning": "Lies or exaggerated claims made to deceive, flatter, or fast-talk someone. Often used in dating or sales pitches.",
+    "examples": [
+      "Stop giving me lamba, tell me the real price.",
+      "He has sweet mouth, full of lamba."
+    ],
+    "popularity": 4,
+    "category": "expression",
+    "tags": ["lie", "exaggeration", "flattery", "deceit"]
+  },
+  {
+    "id": 13,
+    "slang": "gbese",
+    "translation": "Financial liability, debt, or big trouble",
+    "origin": "Yoruba word (Gbé esè)",
+    "meaning": "Refers to getting into deep debt, trouble, or taking a high-risk action that leads to financial or legal consequences.",
+    "examples": [
+      "If we buy this asset now, it is a huge gbese.",
+      "Don't carry gbese that you cannot pay."
+    ],
+    "popularity": 4,
+    "category": "finance",
+    "tags": ["debt", "trouble", "risk", "liability"]
+  },
+  {
+    "id": 14,
+    "slang": "shayo",
+    "translation": "Alcoholic drinks, partying, or intoxication",
+    "origin": "Street / Music",
+    "meaning": "Refers to alcohol or the act of heavy drinking and partying, heavily popularized by Afrobeat music.",
+    "examples": [
+      "We are going out to shayo tonight.",
+      "Too much shayo is not good for your health."
+    ],
+    "popularity": 5,
+    "category": "lifestyle",
+    "tags": ["party", "drink", "alcohol", "fun"]
+  },
+  {
+    "id": 15,
+    "slang": "comot",
+    "translation": "Leave, exit, or go away",
+    "origin": "Pidgin English",
+    "meaning": "Command or suggestion to leave a place or get out. Often used in heated exchanges.",
+    "examples": [
+      "Comot from my front, before I get angry!",
+      "I want to comot from the house and get some fresh air."
+    ],
+    "popularity": 5,
+    "category": "expression",
+    "tags": ["command", "leave", "exit", "street"]
   }
 ]
