@@ -150,5 +150,43 @@
       "honesty",
       "modern"
     ]
+  },
+  {
+    "id": 9,
+    "slang": "ajebutter",
+    "translation": "A sheltered, wealthy, or spoiled kid",
+    "origin": "Pidgin / Compound words",
+    "meaning": "Contrast to 'ajepako' (street-hardened). Describes someone raised in an affluent household who doesn't know street life or manual labor, and has a soft, pampered upbringing.",
+    "examples": [
+      "He can't eat street food, he's an ajebutter.",
+      "These ajebutter kids don't know what sapa feels like."
+    ],
+    "popularity": 4,
+    "category": "personality",
+    "tags": [
+      "rich",
+      "sheltered",
+      "soft",
+      "privileged"
+    ]
+  },
+  {
+    "id": 10,
+    "slang": "watimagbo",
+    "translation": "You must have heard of it by now",
+    "origin": "Yoruba street slang",
+    "meaning": "A catchphrase popular in street music indicating fame, notoriety, or high reputation. Literally: 'You would have heard it'.",
+    "examples": [
+      "Icedmist on the track, watimagbo!",
+      "Our brand is number one nationwide, watimagbo."
+    ],
+    "popularity": 4,
+    "category": "expression",
+    "tags": [
+      "fame",
+      "catchphrase",
+      "street",
+      "pride"
+    ]
   }
 ]
