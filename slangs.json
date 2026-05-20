@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "id": 1,
+    "slang": "sapa",
+    "translation": "Extreme broke-ness or financial distress",
+    "origin": "Street / Pidgin English",
+    "meaning": "A state of extreme poverty, lack of money, or financial dryness, usually caused by poor spending habits, unemployment, or mid-month salary depletion. It is often personified as a spirit that pursues people.",
+    "examples": [
+      "Sapa is chasing me this month, I can't even afford bread.",
+      "God abeg, save me from the hands of sapa!"
+    ],
+    "popularity": 5,
+    "category": "finance",
+    "tags": [
+      "broke",
+      "money",
+      "struggle",
+      "funny"
+    ]
+  },
+  {
+    "id": 2,
+    "slang": "japa",
+    "translation": "To emigrate, flee, or escape",
+    "origin": "Yoruba word (J\u00e1 pa)",
+    "meaning": "Originally meaning to break free or run away, it has become the standard national term for leaving Nigeria in search of better economic opportunities or green pastures abroad.",
+    "examples": [
+      "Everyone in my class is trying to japa to the UK.",
+      "If I get visa today, I will japa without saying goodbye to anyone."
+    ],
+    "popularity": 5,
+    "category": "lifestyle",
+    "tags": [
+      "travel",
+      "escape",
+      "abroad",
+      "dreams"
+    ]
+  }
+]
