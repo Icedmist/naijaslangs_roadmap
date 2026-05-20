@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": 1,
+    "slang": "sapa",
+    "translation": "Extreme broke-ness or financial distress",
+    "origin": "Street / Pidgin English",
+    "meaning": "A state of extreme poverty...",
+    "examples": ["Sapa is chasing me this month."],
+    "popularity": 5,
+    "category": "finance",
+    "tags": ["broke", "money"]
+  }
+]
