@@ -36,5 +36,43 @@
       "abroad",
       "dreams"
     ]
+  },
+  {
+    "id": 3,
+    "slang": "odogwu",
+    "translation": "An influential, wealthy, or highly respected person",
+    "origin": "Igbo (Great Man/Warrior)",
+    "meaning": "Historically used for a warrior or titleholder, it is now used as street slang to describe someone who is highly successful, rich, powerful, or leading in their field.",
+    "examples": [
+      "Odogwu has arrived! Drop the cash!",
+      "He cleared the entire restaurant bill, truly he is an odogwu."
+    ],
+    "popularity": 5,
+    "category": "personality",
+    "tags": [
+      "boss",
+      "wealthy",
+      "leader",
+      "respect"
+    ]
+  },
+  {
+    "id": 4,
+    "slang": "aza",
+    "translation": "Bank account number or details",
+    "origin": "Street Slang",
+    "meaning": "Derived from 'digit' or numerical representation, it refers strictly to a bank account number where money is expected to be transferred or credited.",
+    "examples": [
+      "Send your aza, let me drop something small for you.",
+      "My aza is green, the alert has entered!"
+    ],
+    "popularity": 5,
+    "category": "finance",
+    "tags": [
+      "money",
+      "bank",
+      "alert",
+      "transaction"
+    ]
   }
 ]
