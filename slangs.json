@@ -11,18 +11,13 @@
     ],
     "popularity": 5,
     "category": "finance",
-    "tags": [
-      "broke",
-      "money",
-      "struggle",
-      "funny"
-    ]
+    "tags": ["broke", "money", "struggle", "funny"]
   },
   {
     "id": 2,
     "slang": "japa",
     "translation": "To emigrate, flee, or escape",
-    "origin": "Yoruba word (J\u00e1 pa)",
+    "origin": "Yoruba word (Já pa)",
     "meaning": "Originally meaning to break free or run away, it has become the standard national term for leaving Nigeria in search of better economic opportunities or green pastures abroad.",
     "examples": [
       "Everyone in my class is trying to japa to the UK.",
@@ -30,12 +25,7 @@
     ],
     "popularity": 5,
     "category": "lifestyle",
-    "tags": [
-      "travel",
-      "escape",
-      "abroad",
-      "dreams"
-    ]
+    "tags": ["travel", "escape", "abroad", "dreams"]
   },
   {
     "id": 3,
@@ -49,12 +39,7 @@
     ],
     "popularity": 5,
     "category": "personality",
-    "tags": [
-      "boss",
-      "wealthy",
-      "leader",
-      "respect"
-    ]
+    "tags": ["boss", "wealthy", "leader", "respect"]
   },
   {
     "id": 4,
@@ -68,12 +53,7 @@
     ],
     "popularity": 5,
     "category": "finance",
-    "tags": [
-      "money",
-      "bank",
-      "alert",
-      "transaction"
-    ]
+    "tags": ["money", "bank", "alert", "transaction"]
   },
   {
     "id": 5,
@@ -87,12 +67,7 @@
     ],
     "popularity": 5,
     "category": "expression",
-    "tags": [
-      "request",
-      "pidgin",
-      "polite",
-      "dismissive"
-    ]
+    "tags": ["request", "pidgin", "polite", "dismissive"]
   },
   {
     "id": 6,
@@ -106,12 +81,7 @@
     ],
     "popularity": 5,
     "category": "expression",
-    "tags": [
-      "struggle",
-      "pain",
-      "hardship",
-      " Hausa"
-    ]
+    "tags": ["struggle", "pain", "hardship", " Hausa"]
   },
   {
     "id": 7,
@@ -125,12 +95,7 @@
     ],
     "popularity": 5,
     "category": "expression",
-    "tags": [
-      "crazy",
-      "foolish",
-      "question",
-      "insanity"
-    ]
+    "tags": ["crazy", "foolish", "question", "insanity"]
   },
   {
     "id": 8,
@@ -144,12 +109,7 @@
     ],
     "popularity": 4,
     "category": "expression",
-    "tags": [
-      "truth",
-      "real",
-      "honesty",
-      "modern"
-    ]
+    "tags": ["truth", "real", "honesty", "modern"]
   },
   {
     "id": 9,
@@ -163,12 +123,7 @@
     ],
     "popularity": 4,
     "category": "personality",
-    "tags": [
-      "rich",
-      "sheltered",
-      "soft",
-      "privileged"
-    ]
+    "tags": ["rich", "sheltered", "soft", "privileged"]
   },
   {
     "id": 10,
@@ -182,12 +137,7 @@
     ],
     "popularity": 4,
     "category": "expression",
-    "tags": [
-      "fame",
-      "catchphrase",
-      "street",
-      "pride"
-    ]
+    "tags": ["fame", "catchphrase", "street", "pride"]
   },
   {
     "id": 11,
@@ -201,12 +151,7 @@
     ],
     "popularity": 5,
     "category": "expression",
-    "tags": [
-      "breathtaking",
-      "amazing",
-      "music",
-      "luxury"
-    ]
+    "tags": ["breathtaking", "amazing", "music", "luxury"]
   },
   {
     "id": 12,
@@ -220,11 +165,48 @@
     ],
     "popularity": 4,
     "category": "expression",
-    "tags": [
-      "lie",
-      "exaggeration",
-      "flattery",
-      "deceit"
-    ]
+    "tags": ["lie", "exaggeration", "flattery", "deceit"]
+  },
+  {
+    "id": 13,
+    "slang": "gbese",
+    "translation": "Financial liability, debt, or big trouble",
+    "origin": "Yoruba word (Gbé esè)",
+    "meaning": "Refers to getting into deep debt, trouble, or taking a high-risk action that leads to financial or legal consequences.",
+    "examples": [
+      "If we buy this asset now, it is a huge gbese.",
+      "Don't carry gbese that you cannot pay."
+    ],
+    "popularity": 4,
+    "category": "finance",
+    "tags": ["debt", "trouble", "risk", "liability"]
+  },
+  {
+    "id": 14,
+    "slang": "shayo",
+    "translation": "Alcoholic drinks, partying, or intoxication",
+    "origin": "Street / Music",
+    "meaning": "Refers to alcohol or the act of heavy drinking and partying, heavily popularized by Afrobeat music.",
+    "examples": [
+      "We are going out to shayo tonight.",
+      "Too much shayo is not good for your health."
+    ],
+    "popularity": 5,
+    "category": "lifestyle",
+    "tags": ["party", "drink", "alcohol", "fun"]
+  },
+  {
+    "id": 15,
+    "slang": "comot",
+    "translation": "Leave, exit, or go away",
+    "origin": "Pidgin English",
+    "meaning": "Command or suggestion to leave a place or get out. Often used in heated exchanges.",
+    "examples": [
+      "Comot from my front, before I get angry!",
+      "I want to comot from the house and get some fresh air."
+    ],
+    "popularity": 5,
+    "category": "expression",
+    "tags": ["command", "leave", "exit", "street"]
   }
 ]
