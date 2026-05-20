@@ -112,5 +112,43 @@
       "hardship",
       " Hausa"
     ]
+  },
+  {
+    "id": 7,
+    "slang": "ment",
+    "translation": "To go crazy or lose sanity",
+    "origin": "Derived from 'mental'",
+    "meaning": "Used to query someone's sanity or actions when they do something extremely bizarre, foolish, or outrageous. Usually framed as a question: 'You dey ment?'",
+    "examples": [
+      "Are you dey ment? Why would you delete the production database?",
+      "That guy has completely mented, don't mind him."
+    ],
+    "popularity": 5,
+    "category": "expression",
+    "tags": [
+      "crazy",
+      "foolish",
+      "question",
+      "insanity"
+    ]
+  },
+  {
+    "id": 8,
+    "slang": "no cap",
+    "translation": "No lie, completely true",
+    "origin": "Adopted from global AAVE",
+    "meaning": "Used to emphasize that a statement is 100% genuine, true, and without exaggeration or falsehood.",
+    "examples": [
+      "This is the best jollof rice in Lagos, no cap.",
+      "I worked for 18 hours straight yesterday, no cap."
+    ],
+    "popularity": 4,
+    "category": "expression",
+    "tags": [
+      "truth",
+      "real",
+      "honesty",
+      "modern"
+    ]
   }
 ]
