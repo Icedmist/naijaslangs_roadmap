@@ -16,9 +16,9 @@ const getSlangsDb = () => {
 
 app.get('/api/slangs', (req, res) => {
   let db = getSlangsDb();
-  if (req.query.q) db = db.filter(item => item.slang.includes(req.query.q));
-  if (req.query.category) db = db.filter(item => item.category === req.query.category);
-  res.json(db);
+  const page = parseInt(req.query.page) || 1;
+  const limit = parseInt(req.query.limit) || 10;
+  res.json(db.slice((page-1)*limit, page*limit));
 });
 
 app.listen(PORT, () => console.log('Server running'));
