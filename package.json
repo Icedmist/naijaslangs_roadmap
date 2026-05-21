@@ -1,4 +1,23 @@
 {
   "name": "naijaslangs-api",
-  "version": "1.0.0-beta"
+  "version": "1.0.0-beta",
+  "description": "Linguistic Infrastructure for Nigerian Street Culture",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "nigerian-slang",
+    "pidgin",
+    "linguistics",
+    "api",
+    "rest-api"
+  ],
+  "author": "icedmist <talk2icedmist@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
 }
