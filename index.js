@@ -14,11 +14,10 @@ const getSlangsDb = () => {
   return JSON.parse(fs.readFileSync(path.join(__dirname, 'slangs.json'), 'utf8'));
 };
 
-app.get('/api/slangs', (req, res) => {
-  let db = getSlangsDb();
-  const page = parseInt(req.query.page) || 1;
-  const limit = parseInt(req.query.limit) || 10;
-  res.json(db.slice((page-1)*limit, page*limit));
+app.get('/api/slangs', (req, res) => res.json(getSlangsDb()));
+app.get('/api/slangs/random', (req, res) => {
+  const db = getSlangsDb();
+  res.json(db[Math.floor(Math.random() * db.length)]);
 });
 
 app.listen(PORT, () => console.log('Server running'));
