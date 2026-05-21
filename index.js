@@ -15,9 +15,9 @@ const getSlangsDb = () => {
 };
 
 app.get('/api/slangs', (req, res) => res.json(getSlangsDb()));
-app.get('/api/slangs/random', (req, res) => {
-  const db = getSlangsDb();
-  res.json(db[Math.floor(Math.random() * db.length)]);
+app.get('/api/slangs/:id', (req, res) => {
+  const found = getSlangsDb().find(x => x.id == req.params.id);
+  res.json(found);
 });
 
 app.listen(PORT, () => console.log('Server running'));
