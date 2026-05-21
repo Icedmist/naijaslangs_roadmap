@@ -16,10 +16,8 @@ const getSlangsDb = () => {
 
 app.get('/api/slangs', (req, res) => {
   let db = getSlangsDb();
-  if (req.query.q) {
-    const q = req.query.q.toLowerCase();
-    db = db.filter(item => item.slang.includes(q));
-  }
+  if (req.query.q) db = db.filter(item => item.slang.includes(req.query.q));
+  if (req.query.category) db = db.filter(item => item.category === req.query.category);
   res.json(db);
 });
 
