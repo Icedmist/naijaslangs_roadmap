@@ -14,6 +14,13 @@ const getSlangsDb = () => {
   return JSON.parse(fs.readFileSync(path.join(__dirname, 'slangs.json'), 'utf8'));
 };
 
-app.get('/api/slangs', (req, res) => res.json(getSlangsDb()));
+app.get('/api/slangs', (req, res) => {
+  let db = getSlangsDb();
+  if (req.query.q) {
+    const q = req.query.q.toLowerCase();
+    db = db.filter(item => item.slang.includes(q));
+  }
+  res.json(db);
+});
 
 app.listen(PORT, () => console.log('Server running'));
