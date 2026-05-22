@@ -19,3 +19,6 @@ header { sticky: top; background: rgba(7, 14, 10, 0.75); }
 .hero-stats { display: flex; gap: 20px; justify-content: center; }
 .grid-features { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .feature-card { padding: 20px; border: 1px solid var(--border-color); }
+.playground-wrapper { display: grid; grid-template-columns: 1fr 1.2fr; gap: 20px; }
+.control-group { margin-bottom: 15px; }
+.form-input { width: 100%; padding: 10px; }

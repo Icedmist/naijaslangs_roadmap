@@ -44,6 +44,31 @@
         </div>
       </div>
     </section>
+    <section id="playground" class="playground-section">
+      <div class="container">
+        <h2 class="section-title">Interactive API Playground</h2>
+        <div class="playground-wrapper">
+          <div class="playground-controls glass-panel">
+            <h3>Request Configuration</h3>
+            <div class="control-group">
+              <label for="endpoint-select">Endpoint</label>
+              <select id="endpoint-select" class="form-input">
+                <option value="/api/slangs">GET /api/slangs</option>
+                <option value="/api/slangs/random">GET /api/slangs/random</option>
+                <option value="POST">POST /api/slangs</option>
+              </select>
+            </div>
+            <div id="get-params-group">
+              <div class="control-group">
+                <label for="search-input">Search Query</label>
+                <input type="text" id="search-input" class="form-input" placeholder="Search...">
+              </div>
+            </div>
+            <button id="send-btn" class="btn btn-primary">Execute Request</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
   <footer><p>&copy; 2026 NaijaSlangs API</p></footer>
 </body>
