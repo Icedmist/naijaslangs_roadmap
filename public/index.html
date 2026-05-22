@@ -79,5 +79,15 @@
     </section>
   </div>
   <footer><p>&copy; 2026 NaijaSlangs API</p></footer>
+  <script>
+    const endpointSelect = document.getElementById("endpoint-select");
+    const requestUrl = document.getElementById("request-url");
+    const sendBtn = document.getElementById("send-btn");
+    const responseBody = document.getElementById("response-body");
+    const updateUrl = () => {
+      requestUrl.textContent = "GET http://localhost:3000" + endpointSelect.value;
+    };
+    endpointSelect.addEventListener("change", updateUrl);
+  </script>
 </body>
 </html>
