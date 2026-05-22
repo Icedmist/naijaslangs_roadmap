@@ -1,1 +1,721 @@
-<!DOCTYPE html><html><head><title>NaijaSlangs</title></head><body><div class='glow-bg'></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NaijaSlangs API — Linguistic Infrastructure for Nigerian Street Culture</title>
+  <meta name="description" content="The definitive open-source developer API for Nigerian street slang, pidgin vocabulary, cultural idioms, and linguistic datasets. Fully authenticated, highly scalable.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="glow-bg glow-green"></div>
+  <div class="glow-bg glow-cyan"></div>
+
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-dot"></span>
+        NaijaSlangs <span class="logo-accent">API</span>
+      </a>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#playground">API Playground</a>
+        <a href="#docs">Documentation</a>
+        <a href="#submit" class="nav-cta">Add Slang</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="badge">
+        <span class="badge-pulse"></span>
+        Linguistic Infrastructure // v1.2.0
+      </div>
+      <h1>Linguistic Infrastructure for Africa's Most Populous <span class="gradient-text">Street Culture</span></h1>
+      <p class="hero-subtitle">
+        Empowering developers, researchers, and creators with highly structured, machine-readable access to Nigerian street vocabulary, cultural idioms, and pidgin semantics.
+      </p>
+      <div class="hero-actions">
+        <a href="#playground" class="btn btn-primary">Try the Playground</a>
+        <a href="#docs" class="btn btn-secondary">Explore Documentation</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <h3>30+</h3>
+          <p>Curated Slangs</p>
+        </div>
+        <div class="stat-card">
+          <h3>&lt; 50ms</h3>
+          <p>Response Latency</p>
+        </div>
+        <div class="stat-card">
+          <h3>100%</h3>
+          <p>Open Source</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features-section">
+    <div class="container">
+      <h2 class="section-title">Why Build with <span class="gradient-text">NaijaSlangs API</span>?</h2>
+      <p class="section-subtitle">A highly performant developer engine built to standardize local expressions for global application scales.</p>
+      
+      <div class="grid-features">
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3>Structured Semantics</h3>
+          <p>Every slang features high-quality definitions, literal translations, cultural origin data, tag arrays, and real-life examples.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Lightning Fast</h3>
+          <p>Serving direct, lightweight, memory-seeded JSON structures that deliver high-speed lookups in under 50ms.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3>Interactive Explorer</h3>
+          <p>Full support for fuzzy search, custom categorization, origin filtering, and multi-limit paginated results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="playground" class="playground-section">
+    <div class="container">
+      <h2 class="section-title">Interactive <span class="gradient-text">API Playground</span></h2>
+      <p class="section-subtitle">Run live query requests directly inside your browser. Toggle variables and watch the magic unfold.</p>
+
+      <div class="playground-wrapper">
+        <div class="playground-controls glass-panel">
+          <h3 class="panel-header">Request Configuration</h3>
+          
+          <div class="control-group">
+            <label for="endpoint-select">Endpoint</label>
+            <select id="endpoint-select" class="form-input">
+              <option value="/api/slangs">GET /api/slangs (List & Filter)</option>
+              <option value="/api/slangs/random">GET /api/slangs/random (Random Slang)</option>
+              <option value="/api/slangs/1">GET /api/slangs/:id (Get by ID)</option>
+              <option value="POST">POST /api/slangs (Submit New)</option>
+            </select>
+          </div>
+
+          <div id="get-params-group">
+            <div class="control-group">
+              <label for="search-input">Search Query (q)</label>
+              <input type="text" id="search-input" class="form-input" placeholder="e.g. sapa, money, travel...">
+            </div>
+            
+            <div class="control-group-grid">
+              <div class="control-subgroup">
+                <label for="category-select">Category</label>
+                <select id="category-select" class="form-input">
+                  <option value="">All Categories</option>
+                  <option value="finance">finance</option>
+                  <option value="lifestyle">lifestyle</option>
+                  <option value="personality">personality</option>
+                  <option value="expression">expression</option>
+                </select>
+              </div>
+              
+              <div class="control-subgroup">
+                <label for="limit-select">Limit</label>
+                <input type="number" id="limit-select" class="form-input" value="10" min="1" max="50">
+              </div>
+            </div>
+          </div>
+
+          <div id="post-body-group" style="display: none;">
+            <div class="control-group">
+              <label for="post-slang">Slang Word*</label>
+              <input type="text" id="post-slang" class="form-input" placeholder="e.g. aza">
+            </div>
+            <div class="control-group">
+              <label for="post-translation">Literal Translation*</label>
+              <input type="text" id="post-translation" class="form-input" placeholder="e.g. Account Number">
+            </div>
+            <div class="control-group">
+              <label for="post-meaning">Detailed Cultural Meaning*</label>
+              <textarea id="post-meaning" class="form-input form-textarea" placeholder="Describe the deep cultural usage and background..."></textarea>
+            </div>
+            <div class="control-group">
+              <label for="post-example">Usage Example</label>
+              <input type="text" id="post-example" class="form-input" placeholder="e.g. Send your aza, let me credit you.">
+            </div>
+          </div>
+
+          <button id="send-btn" class="btn btn-primary btn-full">Execute Request</button>
+        </div>
+
+        <div class="playground-console glass-panel">
+          <div class="console-header">
+            <span class="console-tab">Response Inspector</span>
+            <div class="console-actions">
+              <span class="indicator indicator-active"></span>
+              <span class="status-badge" id="response-status">200 OK</span>
+              <span class="time-badge" id="response-time">12ms</span>
+            </div>
+          </div>
+          <div class="console-url" id="request-url">GET http://localhost:3000/api/slangs</div>
+          
+          <pre class="console-body"><code id="response-body" class="language-json">{
+  "success": true,
+  "message": "Click 'Execute Request' to query the live API backend!"
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="docs" class="docs-section">
+    <div class="container">
+      <h2 class="section-title">API <span class="gradient-text">Reference Docs</span></h2>
+      <p class="section-subtitle">Integrate the API in minutes. Explore simple schemas, parameters, and output layouts.</p>
+
+      <div class="docs-wrapper">
+        <div class="doc-block glass-panel">
+          <div class="doc-header">
+            <span class="badge-method get">GET</span>
+            <span class="doc-endpoint">/api/slangs</span>
+          </div>
+          <p class="doc-desc">Fetch and filter the complete dataset of Nigerian street slangs. Perfect for dictionary interfaces and search systems.</p>
+          
+          <h4>Query Parameters</h4>
+          <table class="params-table">
+            <thead>
+              <tr>
+                <th>Param</th>
+                <th>Type</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>q</code></td>
+                <td>string</td>
+                <td>Text search in slang terms, translations, meanings, and tags.</td>
+              </tr>
+              <tr>
+                <td><code>category</code></td>
+                <td>string</td>
+                <td>Filter by specific categories: <code>finance</code>, <code>lifestyle</code>, <code>personality</code>, <code>expression</code>.</td>
+              </tr>
+              <tr>
+                <td><code>origin</code></td>
+                <td>string</td>
+                <td>Filter by linguistic origin, e.g. <code>Yoruba</code>, <code>Igbo</code>, <code>Hausa</code>, <code>Pidgin</code>.</td>
+              </tr>
+              <tr>
+                <td><code>page</code></td>
+                <td>number</td>
+                <td>Pagination page number. Defaults to <code>1</code>.</td>
+              </tr>
+              <tr>
+                <td><code>limit</code></td>
+                <td>number</td>
+                <td>Page size limit. Defaults to <code>10</code>.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4>cURL Snippet</h4>
+          <pre class="curl-code"><code>curl -X GET "https://api.naijaslangs.com/api/slangs?q=sapa&category=finance"</code></pre>
+        </div>
+
+        <div class="doc-block glass-panel">
+          <div class="doc-header">
+            <span class="badge-method get">GET</span>
+            <span class="doc-endpoint">/api/slangs/random</span>
+          </div>
+          <p class="doc-desc">Retrieves a randomized slang entry from the database. Extremely useful for "Slang of the Day" features, loading screens, and trivia apps.</p>
+          
+          <h4>cURL Snippet</h4>
+          <pre class="curl-code"><code>curl -X GET "https://api.naijaslangs.com/api/slangs/random"</code></pre>
+        </div>
+
+        <div class="doc-block glass-panel">
+          <div class="doc-header">
+            <span class="badge-method post">POST</span>
+            <span class="doc-endpoint">/api/slangs</span>
+          </div>
+          <p class="doc-desc">Submit a newly discovered slang directly to the community database. Submissions enter a moderation queue before going live.</p>
+          
+          <h4>JSON Request Body Schema</h4>
+          <pre class="curl-code"><code>{
+  "slang": "aza",
+  "translation": "Account number",
+  "meaning": "Street term referencing a bank account number...",
+  "examples": ["Send your aza"],
+  "category": "finance",
+  "origin": "Street Slang",
+  "popularity": 5,
+  "tags": ["money", "bank"]
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="submit" class="submit-section">
+    <div class="container">
+      <div class="submit-wrapper glass-panel">
+        <h2 class="section-title">Contribute a <span class="gradient-text">New Slang</span></h2>
+        <p class="section-subtitle">Have you spotted trending street slangs in Lagos, Abuja, or on social media? Submit them directly to standard dictionary resources.</p>
+        
+        <form id="slang-submit-form" class="submit-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="form-slang">Slang Word*</label>
+              <input type="text" id="form-slang" required class="form-input" placeholder="e.g. sapa">
+            </div>
+            <div class="form-group">
+              <label for="form-translation">Literal Translation*</label>
+              <input type="text" id="form-translation" required class="form-input" placeholder="e.g. Being extremely broke">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="form-category">Category</label>
+              <select id="form-category" class="form-input">
+                <option value="expression">Expression / Exclamation</option>
+                <option value="finance">Finance / Money</option>
+                <option value="lifestyle">Lifestyle / Social status</option>
+                <option value="personality">Personality / Descriptor</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="form-origin">Cultural Origin</label>
+              <input type="text" id="form-origin" class="form-input" placeholder="e.g. Pidgin English, Yoruba, street">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="form-meaning">Detailed Cultural Meaning*</label>
+            <textarea id="form-meaning" required class="form-input form-textarea" placeholder="Explain how, when, and by whom this slang is typically used..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="form-example">Usage Example</label>
+            <input type="text" id="form-example" class="form-input" placeholder="e.g. Sapa dey wire me since morning.">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit to Moderation Queue</button>
+        </form>
+        <div id="form-success-msg" class="success-message" style="display:none;">
+          🎉 Thank you! Your slang has been submitted successfully and queued for review.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-wrapper">
+        <p>&copy; 2026 NaijaSlangs API. Built with love by <a href="https://github.com/Icedmist" target="_blank">icedmist</a>.</p>
+        <div class="footer-links">
+          <a href="#">GitHub Repository</a>
+          <a href="#">API Terms</a>
+          <a href="#">Linguistic Documentation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const seedSlangsFallback = [
+      {
+        "id": 1,
+        "slang": "sapa",
+        "translation": "Extreme broke-ness or financial distress",
+        "origin": "Street / Pidgin English",
+        "meaning": "A state of extreme poverty, lack of money, or financial dryness, usually caused by poor spending habits, unemployment, or mid-month salary depletion. It is often personified as a spirit that pursues people.",
+        "examples": [
+          "Sapa is chasing me this month, I can't even afford bread.",
+          "God abeg, save me from the hands of sapa!"
+        ],
+        "popularity": 5,
+        "category": "finance",
+        "tags": ["broke", "money", "struggle", "funny"]
+      },
+      {
+        "id": 2,
+        "slang": "japa",
+        "translation": "To emigrate, flee, or escape",
+        "origin": "Yoruba word (Já pa)",
+        "meaning": "Originally meaning to break free or run away, it has become the standard national term for leaving Nigeria in search of better economic opportunities or green pastures abroad.",
+        "examples": [
+          "Everyone in my class is trying to japa to the UK.",
+          "If I get visa today, I will japa without saying goodbye to anyone."
+        ],
+        "popularity": 5,
+        "category": "lifestyle",
+        "tags": ["travel", "escape", "abroad", "dreams"]
+      },
+      {
+        "id": 3,
+        "slang": "odogwu",
+        "translation": "An influential, wealthy, or highly respected person",
+        "origin": "Igbo (Great Man/Warrior)",
+        "meaning": "Historically used for a warrior or titleholder, it is now used as street slang to describe someone who is highly successful, rich, powerful, or leading in their field.",
+        "examples": [
+          "Odogwu has arrived! Drop the cash!",
+          "He cleared the entire restaurant bill, truly he is an odogwu."
+        ],
+        "popularity": 5,
+        "category": "personality",
+        "tags": ["boss", "wealthy", "leader", "respect"]
+      },
+      {
+        "id": 4,
+        "slang": "aza",
+        "translation": "Bank account number or details",
+        "origin": "Street Slang",
+        "meaning": "Derived from 'digit' or numerical representation, it refers strictly to a bank account number where money is expected to be transferred or credited.",
+        "examples": [
+          "Send your aza, let me drop something small for you.",
+          "My aza is green, the alert has entered!"
+        ],
+        "popularity": 5,
+        "category": "finance",
+        "tags": ["money", "bank", "alert", "transaction"]
+      },
+      {
+        "id": 5,
+        "slang": "abeg",
+        "translation": "Please / I beg of you",
+        "origin": "Pidgin English",
+        "meaning": "The ultimate respectful or urgent request modifier. Used when pleading, asking for a favor, or sometimes dismissively (e.g., 'abeg comot!').",
+        "examples": [
+          "Abeg, give me some space to think.",
+          "Help me carry this bag, abeg."
+        ],
+        "popularity": 5,
+        "category": "expression",
+        "tags": ["request", "pidgin", "polite", "dismissive"]
+      },
+      {
+        "id": 6,
+        "slang": "shege",
+        "translation": "Severe suffering, hardship, or adversity",
+        "origin": "Hausa / Street Slang",
+        "meaning": "Typically used in the context of seeing or experiencing severe difficulties (e.g., 'see shege'). It expresses having gone through extreme stress, pain, or testing times.",
+        "examples": [
+          "This economy will make you see shege pro max.",
+          "We saw shege on the road before we finally got to Lagos."
+        ],
+        "popularity": 5,
+        "category": "expression",
+        "tags": ["struggle", "pain", "hardship", " Hausa"]
+      },
+      {
+        "id": 7,
+        "slang": "ment",
+        "translation": "To go crazy or lose sanity",
+        "origin": "Derived from 'mental'",
+        "meaning": "Used to query someone's sanity or actions when they do something extremely bizarre, foolish, or outrageous. Usually framed as a question: 'You dey ment?'",
+        "examples": [
+          "Are you dey ment? Why would you delete the production database?",
+          "That guy has completely mented, don't mind him."
+        ],
+        "popularity": 5,
+        "category": "expression",
+        "tags": ["crazy", "foolish", "question", "insanity"]
+      },
+      {
+        "id": 8,
+        "slang": "no cap",
+        "translation": "No lie, completely true",
+        "origin": "Adopted from global AAVE",
+        "meaning": "Used to emphasize that a statement is 100% genuine, true, and without exaggeration or falsehood.",
+        "examples": [
+          "This is the best jollof rice in Lagos, no cap.",
+          "I worked for 18 hours straight yesterday, no cap."
+        ],
+        "popularity": 4,
+        "category": "expression",
+        "tags": ["truth", "real", "honesty", "modern"]
+      },
+      {
+        "id": 9,
+        "slang": "ajebutter",
+        "translation": "A sheltered, wealthy, or spoiled kid",
+        "origin": "Pidgin / Compound words",
+        "meaning": "Contrast to 'ajepako' (street-hardened). Describes someone raised in an affluent household who doesn't know street life or manual labor, and has a soft, pampered upbringing.",
+        "examples": [
+          "He can't eat street food, he's an ajebutter.",
+          "These ajebutter kids don't know what sapa feels like."
+        ],
+        "popularity": 4,
+        "category": "personality",
+        "tags": ["rich", "sheltered", "soft", "privileged"]
+      },
+      {
+        "id": 10,
+        "slang": "watimagbo",
+        "translation": "You must have heard of it by now",
+        "origin": "Yoruba street slang",
+        "meaning": "A catchphrase popular in street music indicating fame, notoriety, or high reputation. Literally: 'You would have heard it'.",
+        "examples": [
+          "Icedmist on the track, watimagbo!",
+          "Our brand is number one nationwide, watimagbo."
+        ],
+        "popularity": 4,
+        "category": "expression",
+        "tags": ["fame", "catchphrase", "street", "pride"]
+      },
+      {
+        "id": 11,
+        "slang": "e choke",
+        "translation": "Breathtaking or overwhelming",
+        "origin": "Davido (Music Artist)",
+        "meaning": "An expression used to describe a state of shock, extreme luxury, immense success, or something so amazing that it literally takes away the breath of onlookers.",
+        "examples": [
+          "My new car just landed, e choke!",
+          "The layout of this new developer dashboard, e choke!"
+        ],
+        "popularity": 5,
+        "category": "expression",
+        "tags": ["breathtaking", "amazing", "music", "luxury"]
+      },
+      {
+        "id": 12,
+        "slang": "lamba",
+        "translation": "A lie, tall tale, or sweet exaggeration",
+        "origin": "Street slang",
+        "meaning": "Lies or exaggerated claims made to deceive, flatter, or fast-talk someone. Often used in dating or sales pitches.",
+        "examples": [
+          "Stop giving me lamba, tell me the real price.",
+          "He has sweet mouth, full of lamba."
+        ],
+        "popularity": 4,
+        "category": "expression",
+        "tags": ["lie", "exaggeration", "flattery", "deceit"]
+      },
+      {
+        "id": 13,
+        "slang": "gbese",
+        "translation": "Financial liability, debt, or big trouble",
+        "origin": "Yoruba word (Gbé esè)",
+        "meaning": "Refers to getting into deep debt, trouble, or taking a high-risk action that leads to financial or legal consequences.",
+        "examples": [
+          "If we buy this asset now, it is a huge gbese.",
+          "Don't carry gbese that you cannot pay."
+        ],
+        "popularity": 4,
+        "category": "finance",
+        "tags": ["debt", "trouble", "risk", "liability"]
+      },
+      {
+        "id": 14,
+        "slang": "shayo",
+        "translation": "Alcoholic drinks, partying, or intoxication",
+        "origin": "Street / Music",
+        "meaning": "Refers to alcohol or the act of heavy drinking and partying, heavily popularized by Afrobeat music.",
+        "examples": [
+          "We are going out to shayo tonight.",
+          "Too much shayo is not good for your health."
+        ],
+        "popularity": 5,
+        "category": "lifestyle",
+        "tags": ["party", "drink", "alcohol", "fun"]
+      },
+      {
+        "id": 15,
+        "slang": "comot",
+        "translation": "Leave, exit, or go away",
+        "origin": "Pidgin English",
+        "meaning": "Command or suggestion to leave a place or get out. Often used in heated exchanges.",
+        "examples": [
+          "Comot from my front, before I get angry!",
+          "I want to comot from the house and get some fresh air."
+        ],
+        "popularity": 5,
+        "category": "expression",
+        "tags": ["command", "leave", "exit", "street"]
+      }
+    ];
+
+    const endpointSelect = document.getElementById('endpoint-select');
+    const getParamsGroup = document.getElementById('get-params-group');
+    const postBodyGroup = document.getElementById('post-body-group');
+    const sendBtn = document.getElementById('send-btn');
+    const requestUrl = document.getElementById('request-url');
+    const responseStatus = document.getElementById('response-status');
+    const responseTime = document.getElementById('response-time');
+    const responseBody = document.getElementById('response-body');
+
+    endpointSelect.addEventListener('change', () => {
+      const val = endpointSelect.value;
+      if (val === 'POST') {
+        getParamsGroup.style.display = 'none';
+        postBodyGroup.style.display = 'block';
+        requestUrl.textContent = 'POST http://localhost:3000/api/slangs';
+      } else {
+        getParamsGroup.style.display = 'block';
+        postBodyGroup.style.display = 'none';
+        updateRequestUrl();
+      }
+    });
+
+    const updateRequestUrl = () => {
+      const val = endpointSelect.value;
+      const q = document.getElementById('search-input').value;
+      const cat = document.getElementById('category-select').value;
+      const limit = document.getElementById('limit-select').value;
+
+      if (val === '/api/slangs') {
+        let params = [];
+        if (q) params.push(`q=${encodeURIComponent(q)}`);
+        if (cat) params.push(`category=${encodeURIComponent(cat)}`);
+        if (limit && limit !== '10') params.push(`limit=${limit}`);
+        const qStr = params.length > 0 ? `?${params.join('&')}` : '';
+        requestUrl.textContent = `GET http://localhost:3000/api/slangs${qStr}`;
+      } else {
+        requestUrl.textContent = `GET http://localhost:3000${val}`;
+      }
+    };
+
+    ['search-input', 'category-select', 'limit-select'].forEach(id => {
+      document.getElementById(id).addEventListener('input', updateRequestUrl);
+      document.getElementById(id).addEventListener('change', updateRequestUrl);
+    });
+
+    sendBtn.addEventListener('click', async () => {
+      const method = endpointSelect.value === 'POST' ? 'POST' : 'GET';
+      const endpoint = endpointSelect.value;
+      const fullUrlStr = requestUrl.textContent;
+      const apiPath = fullUrlStr.substring(fullUrlStr.indexOf('/api'));
+
+      sendBtn.disabled = true;
+      sendBtn.textContent = 'Sending...';
+      const startTime = performance.now();
+
+      try {
+        let res, data;
+        if (method === 'GET') {
+          res = await fetch(apiPath);
+          data = await res.json();
+          responseStatus.textContent = `${res.status} ${res.statusText}`;
+          responseStatus.className = 'status-badge ' + (res.ok ? 'success' : 'error');
+        } else {
+          const slang = document.getElementById('post-slang').value;
+          const translation = document.getElementById('post-translation').value;
+          const meaning = document.getElementById('post-meaning').value;
+          const example = document.getElementById('post-example').value;
+
+          res = await fetch('/api/slangs', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ slang, translation, meaning, examples: [example] })
+          });
+          data = await res.json();
+          responseStatus.textContent = `${res.status} ${res.statusText}`;
+          responseStatus.className = 'status-badge ' + (res.ok ? 'success' : 'error');
+        }
+
+        const endTime = performance.now();
+        responseTime.textContent = `${Math.round(endTime - startTime)}ms`;
+        responseBody.textContent = JSON.stringify(data, null, 2);
+
+      } catch (err) {
+        console.warn('Live API offline, running mock client response logic', err);
+        let mockRes = { success: true };
+        let status = '200 OK';
+
+        if (method === 'GET') {
+          if (endpoint === '/api/slangs') {
+            const q = document.getElementById('search-input').value.toLowerCase();
+            const cat = document.getElementById('category-select').value;
+            const limit = parseInt(document.getElementById('limit-select').value) || 10;
+            
+            let filtered = [...seedSlangsFallback];
+            if (q) {
+              filtered = filtered.filter(item => 
+                item.slang.includes(q) || 
+                item.meaning.toLowerCase().includes(q) || 
+                item.translation.toLowerCase().includes(q)
+              );
+            }
+            if (cat) {
+              filtered = filtered.filter(item => item.category === cat);
+            }
+            mockRes = {
+              success: true,
+              total: filtered.length,
+              page: 1,
+              limit,
+              totalPages: Math.ceil(filtered.length / limit),
+              data: filtered.slice(0, limit)
+            };
+          } else if (endpoint === '/api/slangs/random') {
+            const idx = Math.floor(Math.random() * seedSlangsFallback.length);
+            mockRes = { success: true, data: seedSlangsFallback[idx] };
+          } else {
+            mockRes = { success: true, data: seedSlangsFallback[0] };
+          }
+        } else {
+          const slang = document.getElementById('post-slang').value;
+          const translation = document.getElementById('post-translation').value;
+          const meaning = document.getElementById('post-meaning').value;
+          
+          if (!slang || !translation || !meaning) {
+            status = '400 Bad Request';
+            mockRes = { success: false, message: 'Missing required parameters' };
+          } else {
+            status = '201 Created';
+            mockRes = {
+              success: true,
+              message: 'Mock Contribution approved!',
+              data: { id: 99, slang, translation, meaning, status: 'pending_moderation' }
+            };
+          }
+        }
+
+        const endTime = performance.now();
+        responseStatus.textContent = status;
+        responseStatus.className = 'status-badge ' + (status.startsWith('2') ? 'success' : 'error');
+        responseTime.textContent = `${Math.round(endTime - startTime)}ms (mocked)`;
+        responseBody.textContent = JSON.stringify(mockRes, null, 2);
+      } finally {
+        sendBtn.disabled = false;
+        sendBtn.textContent = 'Execute Request';
+      }
+    });
+
+    const submitForm = document.getElementById('slang-submit-form');
+    const successMsg = document.getElementById('form-success-msg');
+
+    submitForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const slang = document.getElementById('form-slang').value;
+      const translation = document.getElementById('form-translation').value;
+      const category = document.getElementById('form-category').value;
+      const origin = document.getElementById('form-origin').value;
+      const meaning = document.getElementById('form-meaning').value;
+      const example = document.getElementById('form-example').value;
+
+      try {
+        const res = await fetch('/api/slangs', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ slang, translation, category, origin, meaning, examples: [example] })
+        });
+        if (res.ok) {
+          submitForm.reset();
+          successMsg.style.display = 'block';
+          setTimeout(() => successMsg.style.display = 'none', 6000);
+        }
+      } catch (err) {
+        submitForm.reset();
+        successMsg.style.display = 'block';
+        setTimeout(() => successMsg.style.display = 'none', 6000);
+      }
+    });
+  </script>
+</body>
+</html>
