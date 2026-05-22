@@ -8,3 +8,5 @@
 body { background: var(--bg-color); color: var(--text-primary); }
 .main-layout { display: flex; flex-direction: column; gap: 40px; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.glow-bg { position: absolute; width: 300px; height: 300px; filter: blur(100px); opacity: 0.15; z-index: -1; }
+.glow-green { background: var(--primary-color); top: 10%; left: 10%; }
