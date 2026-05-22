@@ -22,3 +22,6 @@ header { sticky: top; background: rgba(7, 14, 10, 0.75); }
 .playground-wrapper { display: grid; grid-template-columns: 1fr 1.2fr; gap: 20px; }
 .control-group { margin-bottom: 15px; }
 .form-input { width: 100%; padding: 10px; }
+.playground-console { display: flex; flex-direction: column; }
+.status-badge { font-family: monospace; }
+.console-body { background: #000; padding: 15px; }
