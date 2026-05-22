@@ -1,0 +1,8 @@
+:root {
+  --bg-color: #070e0a;
+  --text-primary: #f8fff9;
+  --primary-color: #52b788;
+  --border-color: rgba(45, 106, 79, 0.25);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg-color); color: var(--text-primary); }
