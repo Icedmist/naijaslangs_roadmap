@@ -16,3 +16,6 @@ header { sticky: top; background: rgba(7, 14, 10, 0.75); }
 .logo { font-size: 24px; color: var(--text-primary); font-weight: 800; }
 .hero { text-align: center; padding: 80px 0; }
 .badge { border: 1px solid var(--primary-color); color: var(--primary-color); }
+.hero-stats { display: flex; gap: 20px; justify-content: center; }
+.grid-features { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.feature-card { padding: 20px; border: 1px solid var(--border-color); }
