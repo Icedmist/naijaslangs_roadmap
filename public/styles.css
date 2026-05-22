@@ -10,3 +10,5 @@ body { background: var(--bg-color); color: var(--text-primary); }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 .glow-bg { position: absolute; width: 300px; height: 300px; filter: blur(100px); opacity: 0.15; z-index: -1; }
 .glow-green { background: var(--primary-color); top: 10%; left: 10%; }
+.glass-panel { background: rgba(13, 26, 18, 0.65); border: 1px solid var(--border-color); backdrop-filter: blur(16px); }
+.glass-panel:hover { border-color: rgba(82, 183, 136, 0.45); }
