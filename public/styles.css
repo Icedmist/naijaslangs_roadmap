@@ -27,3 +27,5 @@ header { sticky: top; background: rgba(7, 14, 10, 0.75); }
 .console-body { background: #000; padding: 15px; }
 .docs-wrapper { display: flex; flex-direction: column; gap: 15px; }
 .badge-method { padding: 4px; font-weight: bold; }
+.submit-wrapper { max-width: 600px; margin: 0 auto; }
+.submit-form { display: flex; flex-direction: column; gap: 10px; }
