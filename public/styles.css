@@ -29,3 +29,5 @@ header { sticky: top; background: rgba(7, 14, 10, 0.75); }
 .badge-method { padding: 4px; font-weight: bold; }
 .submit-wrapper { max-width: 600px; margin: 0 auto; }
 .submit-form { display: flex; flex-direction: column; gap: 10px; }
+/* Hover optimization styling added */
+* { transition: all 0.3s ease; }
