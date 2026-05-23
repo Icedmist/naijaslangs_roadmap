@@ -98,6 +98,7 @@
             <input type="text" id="form-translation" placeholder="Translation" required class="form-input">
             <button type="submit" class="btn btn-primary">Submit Slang</button>
           </form>
+          <div id="form-success-msg" class="success-message" style="display:none;">Submitted successfully!</div>
         </div>
       </div>
     </section>
@@ -121,6 +122,12 @@
         console.log("Offline, running fallback");
         responseBody.textContent = JSON.stringify({ success: true, mock: true });
       }
+    });
+    const submitForm = document.getElementById("slang-submit-form");
+    const successMsg = document.getElementById("form-success-msg");
+    submitForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      successMsg.style.display = "block";
     });
   </script>
 </body>
