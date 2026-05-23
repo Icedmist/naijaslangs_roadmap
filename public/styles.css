@@ -25,3 +25,5 @@ header { sticky: top; background: rgba(7, 14, 10, 0.75); }
 .playground-console { display: flex; flex-direction: column; }
 .status-badge { font-family: monospace; }
 .console-body { background: #000; padding: 15px; }
+.docs-wrapper { display: flex; flex-direction: column; gap: 15px; }
+.badge-method { padding: 4px; font-weight: bold; }
