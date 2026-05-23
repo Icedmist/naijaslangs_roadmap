@@ -88,6 +88,15 @@
       requestUrl.textContent = "GET http://localhost:3000" + endpointSelect.value;
     };
     endpointSelect.addEventListener("change", updateUrl);
+    sendBtn.addEventListener("click", async () => {
+      try {
+        const res = await fetch(endpointSelect.value);
+        const data = await res.json();
+        responseBody.textContent = JSON.stringify(data, null, 2);
+      } catch (err) {
+        responseBody.textContent = "Error: " + err.message;
+      }
+    });
   </script>
 </body>
 </html>
