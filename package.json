@@ -1,6 +1,6 @@
 {
   "name": "naijaslangs-api",
-  "version": "1.0.0-beta",
+  "version": "1.0.0",
   "description": "Linguistic Infrastructure for Nigerian Street Culture",
   "main": "index.js",
   "scripts": {
